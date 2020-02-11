@@ -1,4 +1,4 @@
-package com.example.psrab.btmouse;
+package com.example.btmouse;
 
 import java.io.IOException;
 import java.io.InputStream;

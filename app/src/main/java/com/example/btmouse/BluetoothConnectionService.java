@@ -1,4 +1,4 @@
-package com.example.psrab.btmouse;
+package com.example.btmouse;
 
 import android.app.ProgressDialog;
 import android.bluetooth.BluetoothAdapter;

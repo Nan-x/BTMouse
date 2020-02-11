@@ -88,10 +88,10 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\rhian\.gra
 		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:11:7-33
 	android:theme
 		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:17:7-38
-activity#com.example.psrab.btmouse.SplashActivity
+activity#com.example.btmouse.SplashActivity
 ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:19:5-25:16
 	android:name
-		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:19:15-45
+		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:19:15-64
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:20:7-24:23
 action#android.intent.action.MAIN
@@ -102,18 +102,18 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:23:9-69
 	android:name
 		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:23:19-66
-activity#com.example.psrab.btmouse.DiscoverActivity
+activity#com.example.btmouse.DiscoverActivity
 ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:27:5-30:16
 	android:screenOrientation
 		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:29:9-45
 	android:name
-		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:28:9-41
-activity#com.example.psrab.btmouse.TrapPadActivity
+		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:28:9-60
+activity#com.example.btmouse.TrapPadActivity
 ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:32:5-34:57
 	android:screenOrientation
 		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:34:9-45
 	android:name
-		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:33:9-40
+		ADDED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml:33:9-59
 uses-sdk
 INJECTED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\rhian\AndroidStudioProjects\BTMouse\app\src\main\AndroidManifest.xml

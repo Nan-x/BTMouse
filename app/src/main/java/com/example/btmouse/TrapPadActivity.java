@@ -1,4 +1,4 @@
-package com.example.psrab.btmouse;
+package com.example.btmouse;
 
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
@@ -18,6 +18,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.psrab.btmouse.R;
 
 import java.io.IOException;
 import java.io.OutputStream;

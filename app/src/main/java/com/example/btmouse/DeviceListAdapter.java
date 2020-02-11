@@ -1,4 +1,4 @@
-package com.example.psrab.btmouse;
+package com.example.btmouse;
 
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.example.psrab.btmouse.R;
 
 import java.util.ArrayList;
 
