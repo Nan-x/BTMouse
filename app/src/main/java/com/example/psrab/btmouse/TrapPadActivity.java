@@ -21,12 +21,11 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.nio.charset.Charset;
 import java.util.UUID;
 
 
-public class MouseActivity extends AppCompatActivity {
-    private static final String TAG = "MouseActivity";
+public class TrapPadActivity extends AppCompatActivity {
+    private static final String TAG = "TrapPadActivity";
     private static final int REQUEST_ENABLE_BT = 1;
     private BluetoothAdapter btAdapter = null;
     private BluetoothSocket btSocket = null;
@@ -44,7 +43,7 @@ public class MouseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_trappad);
 
         this.getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -223,7 +222,7 @@ public class MouseActivity extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface arg0, int arg1) {
                             getConn();
-                            Toast.makeText(MouseActivity.this,"Connection Established",Toast.LENGTH_LONG).show();
+                            Toast.makeText(TrapPadActivity.this,"Connection Established",Toast.LENGTH_LONG).show();
                         }
                     })
 

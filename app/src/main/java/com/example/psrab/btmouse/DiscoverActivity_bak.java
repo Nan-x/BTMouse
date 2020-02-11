@@ -22,8 +22,8 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 
-public class MainActivity_bak extends AppCompatActivity implements AdapterView.OnItemClickListener{
-    private static final String TAG = "MainActivity";
+public class DiscoverActivity_bak extends AppCompatActivity implements AdapterView.OnItemClickListener{
+    private static final String TAG = "DiscoverActivity";
 
     BluetoothAdapter mBluetoothAdapter;
     Button btnEnableDisable_Discoverable;
@@ -179,7 +179,7 @@ public class MainActivity_bak extends AppCompatActivity implements AdapterView.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_discover);
         Button btnONOFF = (Button) findViewById(R.id.btnONOFF);
         btnEnableDisable_Discoverable = (Button) findViewById(R.id.btnDiscoverable_on_off);
         lvNewDevices = (ListView) findViewById(R.id.lvNewDevices);
@@ -195,7 +195,7 @@ public class MainActivity_bak extends AppCompatActivity implements AdapterView.O
 
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        lvNewDevices.setOnItemClickListener(MainActivity_bak.this);
+        lvNewDevices.setOnItemClickListener(DiscoverActivity_bak.this);
 
 
         btnONOFF.setOnClickListener(new View.OnClickListener() {
@@ -339,7 +339,7 @@ public class MainActivity_bak extends AppCompatActivity implements AdapterView.O
             mBTDevices.get(i).createBond();
 
             mBTDevice = mBTDevices.get(i);
-            mBluetoothConnection = new BluetoothConnectionService(MainActivity_bak.this);
+            mBluetoothConnection = new BluetoothConnectionService(DiscoverActivity_bak.this);
         }
     }
 }

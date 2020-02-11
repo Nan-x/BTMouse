@@ -18,15 +18,13 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.UUID;
 
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
-    private static final String TAG = "MainActivity";
+public class DiscoverActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
+    private static final String TAG = "DiscoverActivity";
 
     private static final int REQUEST_ENABLE_BT = 1;
     BluetoothAdapter mBluetoothAdapter;
@@ -65,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_discover);
 
         Button btndiscover = (Button) findViewById(R.id.btnFindUnpairedDevices);
         lvNewDevices = (ListView) findViewById(R.id.lvNewDevices);
@@ -82,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         //must be made discoverable
         //EnableDiscoverable();
 
-        lvNewDevices.setOnItemClickListener(MainActivity.this);
+        lvNewDevices.setOnItemClickListener(DiscoverActivity.this);
         btndiscover.performClick();
     }
 
@@ -227,8 +225,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             mBTDevices.get(i).createBond();
 
             mBTDevice = mBTDevices.get(i);
-            mBluetoothConnection = new BluetoothConnectionService(MainActivity.this);
-            Intent intent = new Intent(getBaseContext(), MouseActivity.class);
+            mBluetoothConnection = new BluetoothConnectionService(DiscoverActivity.this);
+            Intent intent = new Intent(getBaseContext(), TrapPadActivity.class);
             intent.putExtra("MAC_ADDRESS", deviceAddress);
             startActivity(intent);
         }
