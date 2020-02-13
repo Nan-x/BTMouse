@@ -12,6 +12,7 @@ import android.content.IntentFilter;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -84,6 +85,17 @@ public class DiscoverActivity extends AppCompatActivity implements AdapterView.O
 
         lvNewDevices.setOnItemClickListener(DiscoverActivity.this);
         btndiscover.performClick();
+
+
+        //---ACTION BAR
+      
+      Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+      setSupportActionBar(myToolbar);
+
+
+
+
+
     }
 
     public void AlertBox( String title, String message ){
