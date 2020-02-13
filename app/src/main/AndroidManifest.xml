@@ -15,7 +15,8 @@
       android:screenOrientation="portrait"
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
-    <activity android:name="com.example.btmouse.MainMenuactivity"></activity>
+    <activity android:name="com.example.btmouse.SettingsActivity"></activity>
+    <activity android:name="com.example.btmouse.MainMenuactivity" />
     <activity android:name="com.example.btmouse.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -25,7 +26,7 @@
     </activity>
     <activity
         android:name="com.example.btmouse.DiscoverActivity"
-        android:screenOrientation="portrait"></activity>
+        android:screenOrientation="portrait" />
     <activity
         android:name="com.example.btmouse.TrapPadActivity"
         android:screenOrientation="portrait" />

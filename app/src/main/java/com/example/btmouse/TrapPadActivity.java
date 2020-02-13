@@ -19,7 +19,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.psrab.btmouse.R;
+import com.example.btmouse.R;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -235,6 +235,7 @@ public class TrapPadActivity extends AppCompatActivity {
     }).show();
   }
 
+  //Sends instrucions to the server from motionevents/button pressed
   public void sendMSG(String message)
   {
       //String message = "Hello from Android.\n";
