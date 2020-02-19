@@ -56,7 +56,7 @@ public class DiscoverActivity extends AppCompatActivity implements AdapterView.O
     protected void onDestroy() {
         Log.d(TAG, "onDestroy: called.");
         super.onDestroy();
-//        unregisterReceiver(mBroadcastReceiver1);
+        unregisterReceiver(mBroadcastReceiver3);
 //        unregisterReceiver(mBroadcastReceiver2);
 //        unregisterReceiver(mBroadcastReceiver3);
 //        unregisterReceiver(mBroadcastReceiver4);

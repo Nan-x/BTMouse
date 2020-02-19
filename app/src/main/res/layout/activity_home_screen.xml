@@ -4,6 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeScreenActivity">
+    tools:context="com.example.btmouse.HomeScreenActivity">
+
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/my_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="#6ac2d4"
+      android:elevation="4dp"
+      android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+      tools:layout_editor_absoluteX="0dp" />
+
+  <ImageButton
+      android:id="@+id/TrackPadButton"
+      android:layout_width="115dp"
+      android:layout_height="80dp"
+      app:layout_constraintBottom_toTopOf="@+id/MouseButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.462"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+      app:layout_constraintVertical_bias="0.472"
+      tools:src="@drawable/baseline_touch_app_black_18dp" />
+
+  <ImageButton
+      android:id="@+id/MouseButton"
+      android:layout_width="112dp"
+      android:layout_height="77dp"
+      android:layout_marginBottom="112dp"
+      app:layout_constraintBottom_toTopOf="@+id/SettingsButton"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.474"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:src="@drawable/baseline_mouse_black_18dp" />
+
+  <ImageButton
+      android:id="@+id/SettingsButton"
+      android:layout_width="111dp"
+      android:layout_height="73dp"
+      android:layout_marginBottom="124dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.473"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:src="@drawable/baseline_settings_bluetooth_black_18dp" />
+
 
 </android.support.constraint.ConstraintLayout>

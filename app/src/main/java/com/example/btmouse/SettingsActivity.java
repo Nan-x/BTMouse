@@ -1,12 +1,17 @@
 package com.example.btmouse;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.widget.ImageButton;
 
 import com.example.psrab.btmouse.R;
 
 public class SettingsActivity extends AppCompatActivity {
+
+
+  ImageButton discoverbutton;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +23,13 @@ public class SettingsActivity extends AppCompatActivity {
 
 
 
+    //----Buttons
 
-
+    discoverbutton = (ImageButton) findViewById(R.id.DiscoverButton);
+    discoverbutton.setOnClickListener(v -> {
+      Intent activity2Intent = new Intent(getApplicationContext(), DiscoverActivity.class);
+      startActivity(activity2Intent);
+    });
 
 
 

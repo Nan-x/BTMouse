@@ -20,10 +20,11 @@ import java.util.UUID;
  */
 
 public class BluetoothConnectionService {
-    private static final String TAG = "BluetoothConnectionServ";
 
+    private static final String TAG = "BluetoothConnectionServ";
     private static final String appName = "MYAPP";
 
+    //Unique ID
     private static final UUID MY_UUID_INSECURE =
             UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
