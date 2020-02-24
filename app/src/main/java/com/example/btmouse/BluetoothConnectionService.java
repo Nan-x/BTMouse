@@ -15,9 +15,6 @@ import java.io.OutputStream;
 import java.nio.charset.Charset;
 import java.util.UUID;
 
-/**
- * Created by User on 12/21/2016.
- */
 
 public class BluetoothConnectionService {
 
@@ -27,6 +24,7 @@ public class BluetoothConnectionService {
     //Unique ID
     private static final UUID MY_UUID_INSECURE =
             UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+
 
     private final BluetoothAdapter mBluetoothAdapter;
     Context mContext;

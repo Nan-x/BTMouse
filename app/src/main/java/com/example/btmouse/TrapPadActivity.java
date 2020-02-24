@@ -28,6 +28,8 @@ import java.util.UUID;
 
 
 public class TrapPadActivity extends AppCompatActivity {
+
+
     private static final String TAG = "TrapPadActivity";
     private static final int REQUEST_ENABLE_BT = 1;
     private BluetoothAdapter btAdapter = null;
