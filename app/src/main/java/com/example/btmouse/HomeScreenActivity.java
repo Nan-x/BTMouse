@@ -32,7 +32,7 @@ public class HomeScreenActivity extends AppCompatActivity {
 
     mousebutton = (ImageButton) findViewById(R.id.MouseButton);
     mousebutton.setOnClickListener(v -> {
-      Intent activity2Intent = new Intent(getApplicationContext(), MouseActivity.class);
+      Intent activity2Intent = new Intent(getApplicationContext(), DiscoverActivity2.class);
       startActivity(activity2Intent);
     });
 

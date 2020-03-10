@@ -15,19 +15,30 @@
       android:screenOrientation="portrait"
       android:supportsRtl="true"
       android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-    <activity android:name="com.example.btmouse.MouseActivity"></activity>
+
+    <activity android:name="com.example.btmouse.MouseActivity"
+              android:screenOrientation="portrait"
+    />
+
     <activity android:name="com.example.btmouse.HomeScreenActivity" />
+
     <activity android:name="com.example.btmouse.SettingsActivity" />
+
     <activity android:name="com.example.btmouse.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
-
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+
     <activity
         android:name="com.example.btmouse.DiscoverActivity"
         android:screenOrientation="portrait" />
+
+    <activity
+        android:name="com.example.btmouse.DiscoverActivity2"
+        android:screenOrientation="portrait" />
+
     <activity
         android:name="com.example.btmouse.TrapPadActivity"
         android:screenOrientation="portrait" />

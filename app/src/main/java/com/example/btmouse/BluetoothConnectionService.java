@@ -159,7 +159,6 @@ public class BluetoothConnectionService {
                 Log.d(TAG, "run: ConnectThread: Could not connect to UUID: " + MY_UUID_INSECURE );
             }
 
-            //will talk about this in the 3rd video
             connected(mmSocket,mmDevice);
         }
         public void cancel() {

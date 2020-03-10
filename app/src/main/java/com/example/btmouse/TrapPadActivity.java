@@ -28,8 +28,6 @@ import java.util.UUID;
 
 
 public class TrapPadActivity extends AppCompatActivity {
-
-
     private static final String TAG = "TrapPadActivity";
     private static final int REQUEST_ENABLE_BT = 1;
     private BluetoothAdapter btAdapter = null;
@@ -246,7 +244,7 @@ public class TrapPadActivity extends AppCompatActivity {
     }).show();
   }
 
-  public void sendMSG(String message)
+  public  void sendMSG(String message)
   {
       //String message = "Hello from Android.\n";
       if(outStream == null) getConn();
