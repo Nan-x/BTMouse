@@ -22,37 +22,25 @@
 
   <ImageButton
       android:id="@+id/TrackPadButton"
-      android:layout_width="115dp"
-      android:layout_height="80dp"
+      android:layout_width="260dp"
+      android:layout_height="175dp"
+      android:layout_marginTop="36dp"
+      android:src="@drawable/trackpad"
       app:layout_constraintBottom_toTopOf="@+id/MouseButton"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.462"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
-      app:layout_constraintVertical_bias="0.472"
-      tools:src="@drawable/baseline_touch_app_black_18dp" />
+      app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
 
   <ImageButton
       android:id="@+id/MouseButton"
-      android:layout_width="112dp"
-      android:layout_height="77dp"
+      android:layout_width="260dp"
+      android:layout_height="175dp"
       android:layout_marginBottom="112dp"
-      app:layout_constraintBottom_toTopOf="@+id/SettingsButton"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.474"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:src="@drawable/baseline_mouse_black_18dp" />
-
-  <ImageButton
-      android:id="@+id/SettingsButton"
-      android:layout_width="111dp"
-      android:layout_height="73dp"
-      android:layout_marginBottom="124dp"
+      android:src="@drawable/mousebutton"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.473"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:src="@drawable/baseline_settings_bluetooth_black_18dp" />
+      app:layout_constraintHorizontal_bias="0.503"
+      app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

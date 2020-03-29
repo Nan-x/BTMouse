@@ -200,7 +200,6 @@ public class BluetoothConnectionService {
     public void startClient(BluetoothDevice device,UUID uuid){
         Log.d(TAG, "startClient: Started.");
 
-        //initprogress dialog
         mProgressDialog = ProgressDialog.show(mContext,"Connecting Bluetooth"
                 ,"Please Wait...",true);
 
@@ -224,7 +223,7 @@ public class BluetoothConnectionService {
             InputStream tmpIn = null;
             OutputStream tmpOut = null;
 
-            //dismiss the progressdialog when connection is established
+            //Dismiss the progress dialog when connection is established
             try{
                 mProgressDialog.dismiss();
             }catch (NullPointerException e){

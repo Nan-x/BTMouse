@@ -48,9 +48,6 @@ public class MouseActivity extends Activity implements SensorEventListener{
 
   private SensorManager mSensorManager;
   private Sensor mAccelerometer;
-  private float vx, vy, velocityMagnitude, ux, uy, t, t2, t1;
-  private float a1, a2;
-  private State state;
 
   private String[] logStates = {"Idle", "Acceleration", "Constant Velocity"};
 
@@ -141,52 +138,6 @@ public class MouseActivity extends Activity implements SensorEventListener{
   }
 
   public void onSensorChanged(SensorEvent event) {
-
-   /* a2 = event.values[0] + event.values[1];
-    a1 = a2;
-
-    vx = Math.abs(ux + event.values[0]);
-    vy = Math.abs(uy + event.values[1]);
-
-    ux = vx;
-    uy = vy;
-
-    float temp = KinematicsGovernor.vectorMagnitude(new float[]{vx, vy});
-    if (temp > 0.3)
-      Log.d("Velocity", "" + vx);
-
-    switch (state) {
-      case IDLE:
-        ux = 0;
-        uy = 0;
-        if (velocityMagnitude > 1)
-          state = State.MOVING;
-
-        sendMSG((int)vx+"&"+(int)vy+"\n");
-
-        break;
-
-      case MOVING:
-        ux = vx;
-        uy = vy;
-        sendMSG((int)vx+"&"+(int)vy+"\n");
-        Log.d("Coords" ," : " + vx +vy);
-
-
-        if (velocityMagnitude < 1)
-          state = State.IDLE;
-        break;
-
-      default:
-        break;
-    }*/
-
-
-    //if (deltaX < 2)
-      //deltaX = 0;
-    //if (deltaY < 2)
-      //deltaY = 0;
-
 
     deltaX = Math.abs(lastX - event.values[0]);
     deltaY = Math.abs(lastY - event.values[1]);

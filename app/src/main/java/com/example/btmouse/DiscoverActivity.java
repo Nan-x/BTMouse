@@ -28,6 +28,7 @@ import java.util.UUID;
 
 public class DiscoverActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
     private static final String TAG = "DiscoverActivity";
+    public boolean flag;
 
     private static final int REQUEST_ENABLE_BT = 1;
     BluetoothAdapter mBluetoothAdapter;
@@ -67,6 +68,8 @@ public class DiscoverActivity extends AppCompatActivity implements AdapterView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_discover);
+        Intent intent = getIntent();
+        flag = intent.getBooleanExtra("flag", true);
 
         Button btndiscover = (Button) findViewById(R.id.btnFindUnpairedDevices);
         lvNewDevices = (ListView) findViewById(R.id.lvNewDevices);
@@ -232,7 +235,7 @@ public class DiscoverActivity extends AppCompatActivity implements AdapterView.O
         Log.d(TAG, "onItemClick: deviceName = " + deviceName);
         Log.d(TAG, "onItemClick: deviceAddress = " + deviceAddress);
 
-        //create the bond.
+        //create the connection.
         //NOTE: Requires API 17+? I think this is JellyBean
         if(Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR2){
             Log.d(TAG, "Trying to pair with " + deviceName);
@@ -240,7 +243,13 @@ public class DiscoverActivity extends AppCompatActivity implements AdapterView.O
 
             mBTDevice = mBTDevices.get(i);
             mBluetoothConnection = new BluetoothConnectionService(DiscoverActivity.this);
-            Intent intent = new Intent(getBaseContext(), TrapPadActivity.class);
+            Intent intent;
+            //= new Intent(getBaseContext(), TrapPadActivity.class);
+          if(flag){
+            intent = new Intent(getBaseContext(), TrapPadActivity.class);
+          }else{
+            intent = new Intent(getBaseContext(), MouseActivity.class);
+          }
             intent.putExtra("MAC_ADDRESS", deviceAddress);
             startActivity(intent);
         }
